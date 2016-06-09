@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0DE0A361D05BB22001EC336 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A351D05BB22001EC336 /* main.m */; };
+		C0DE0A391D05BB22001EC336 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A381D05BB22001EC336 /* AppDelegate.m */; };
+		C0DE0A3C1D05BB22001EC336 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A3B1D05BB22001EC336 /* ViewController.m */; };
+		C0DE0A3F1D05BB22001EC336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A3D1D05BB22001EC336 /* Main.storyboard */; };
+		C0DE0A411D05BB22001EC336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A401D05BB22001EC336 /* Assets.xcassets */; };
+		C0DE0A441D05BB22001EC336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A421D05BB22001EC336 /* LaunchScreen.storyboard */; };
+		C0DE0A511D05BB96001EC336 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A4F1D05BB96001EC336 /* Interface.storyboard */; };
+		C0DE0A531D05BB96001EC336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A521D05BB96001EC336 /* Assets.xcassets */; };
+		C0DE0A5A1D05BB96001EC336 /* WatchKitDemoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0DE0A591D05BB96001EC336 /* WatchKitDemoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0DE0A601D05BB96001EC336 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A5F1D05BB96001EC336 /* InterfaceController.m */; };
+		C0DE0A631D05BB96001EC336 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A621D05BB96001EC336 /* ExtensionDelegate.m */; };
+		C0DE0A651D05BB96001EC336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DE0A641D05BB96001EC336 /* Assets.xcassets */; };
+		C0DE0A691D05BB96001EC336 /* WatchKitDemoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0DE0A4D1D05BB96001EC336 /* WatchKitDemoWatch.app */; };
+		C0DE0A741D05BBD9001EC336 /* WeatherInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A731D05BBD9001EC336 /* WeatherInterfaceController.m */; };
+		C0DE0A771D070BB3001EC336 /* DayWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A761D070BB3001EC336 /* DayWeather.m */; };
+		C0DE0A7A1D070BBF001EC336 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A791D070BBF001EC336 /* Weather.m */; };
+		C0DE0A7D1D07144A001EC336 /* DayRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0A7C1D07144A001EC336 /* DayRowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0DE0A5B1D05BB96001EC336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0DE0A291D05BB22001EC336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DE0A581D05BB96001EC336;
+			remoteInfo = "WatchKitDemoWatch Extension";
+		};
+		C0DE0A671D05BB96001EC336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0DE0A291D05BB22001EC336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DE0A4C1D05BB96001EC336;
+			remoteInfo = WatchKitDemoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0DE0A6D1D05BB96001EC336 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0DE0A5A1D05BB96001EC336 /* WatchKitDemoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE0A711D05BB96001EC336 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0DE0A691D05BB96001EC336 /* WatchKitDemoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0DE0A311D05BB22001EC336 /* WatchKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE0A351D05BB22001EC336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0DE0A371D05BB22001EC336 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0DE0A381D05BB22001EC336 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0DE0A3A1D05BB22001EC336 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0DE0A3B1D05BB22001EC336 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0DE0A3E1D05BB22001EC336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0DE0A401D05BB22001EC336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0DE0A431D05BB22001EC336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0DE0A451D05BB22001EC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DE0A4D1D05BB96001EC336 /* WatchKitDemoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitDemoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE0A501D05BB96001EC336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C0DE0A521D05BB96001EC336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0DE0A541D05BB96001EC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DE0A591D05BB96001EC336 /* WatchKitDemoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKitDemoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE0A5E1D05BB96001EC336 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C0DE0A5F1D05BB96001EC336 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C0DE0A611D05BB96001EC336 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		C0DE0A621D05BB96001EC336 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		C0DE0A641D05BB96001EC336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0DE0A661D05BB96001EC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DE0A721D05BBD9001EC336 /* WeatherInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceController.h; sourceTree = "<group>"; };
+		C0DE0A731D05BBD9001EC336 /* WeatherInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInterfaceController.m; sourceTree = "<group>"; };
+		C0DE0A751D070BB3001EC336 /* DayWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayWeather.h; sourceTree = "<group>"; };
+		C0DE0A761D070BB3001EC336 /* DayWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayWeather.m; sourceTree = "<group>"; };
+		C0DE0A781D070BBF001EC336 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		C0DE0A791D070BBF001EC336 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		C0DE0A7B1D07144A001EC336 /* DayRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayRowController.h; sourceTree = "<group>"; };
+		C0DE0A7C1D07144A001EC336 /* DayRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayRowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0DE0A2E1D05BB22001EC336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE0A561D05BB96001EC336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0DE0A281D05BB22001EC336 = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A331D05BB22001EC336 /* WatchKitDemo */,
+				C0DE0A4E1D05BB96001EC336 /* WatchKitDemoWatch */,
+				C0DE0A5D1D05BB96001EC336 /* WatchKitDemoWatch Extension */,
+				C0DE0A321D05BB22001EC336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0DE0A321D05BB22001EC336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A311D05BB22001EC336 /* WatchKitDemo.app */,
+				C0DE0A4D1D05BB96001EC336 /* WatchKitDemoWatch.app */,
+				C0DE0A591D05BB96001EC336 /* WatchKitDemoWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0DE0A331D05BB22001EC336 /* WatchKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A371D05BB22001EC336 /* AppDelegate.h */,
+				C0DE0A381D05BB22001EC336 /* AppDelegate.m */,
+				C0DE0A3A1D05BB22001EC336 /* ViewController.h */,
+				C0DE0A3B1D05BB22001EC336 /* ViewController.m */,
+				C0DE0A3D1D05BB22001EC336 /* Main.storyboard */,
+				C0DE0A401D05BB22001EC336 /* Assets.xcassets */,
+				C0DE0A421D05BB22001EC336 /* LaunchScreen.storyboard */,
+				C0DE0A451D05BB22001EC336 /* Info.plist */,
+				C0DE0A341D05BB22001EC336 /* Supporting Files */,
+			);
+			path = WatchKitDemo;
+			sourceTree = "<group>";
+		};
+		C0DE0A341D05BB22001EC336 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A351D05BB22001EC336 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0DE0A4E1D05BB96001EC336 /* WatchKitDemoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A4F1D05BB96001EC336 /* Interface.storyboard */,
+				C0DE0A521D05BB96001EC336 /* Assets.xcassets */,
+				C0DE0A541D05BB96001EC336 /* Info.plist */,
+			);
+			path = WatchKitDemoWatch;
+			sourceTree = "<group>";
+		};
+		C0DE0A5D1D05BB96001EC336 /* WatchKitDemoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE0A641D05BB96001EC336 /* Assets.xcassets */,
+				C0DE0A661D05BB96001EC336 /* Info.plist */,
+				C0DE0A721D05BBD9001EC336 /* WeatherInterfaceController.h */,
+				C0DE0A731D05BBD9001EC336 /* WeatherInterfaceController.m */,
+				C0DE0A5E1D05BB96001EC336 /* InterfaceController.h */,
+				C0DE0A5F1D05BB96001EC336 /* InterfaceController.m */,
+				C0DE0A611D05BB96001EC336 /* ExtensionDelegate.h */,
+				C0DE0A621D05BB96001EC336 /* ExtensionDelegate.m */,
+				C0DE0A781D070BBF001EC336 /* Weather.h */,
+				C0DE0A791D070BBF001EC336 /* Weather.m */,
+				C0DE0A751D070BB3001EC336 /* DayWeather.h */,
+				C0DE0A761D070BB3001EC336 /* DayWeather.m */,
+				C0DE0A7B1D07144A001EC336 /* DayRowController.h */,
+				C0DE0A7C1D07144A001EC336 /* DayRowController.m */,
+			);
+			path = "WatchKitDemoWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0DE0A301D05BB22001EC336 /* WatchKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DE0A481D05BB22001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemo" */;
+			buildPhases = (
+				C0DE0A2D1D05BB22001EC336 /* Sources */,
+				C0DE0A2E1D05BB22001EC336 /* Frameworks */,
+				C0DE0A2F1D05BB22001EC336 /* Resources */,
+				C0DE0A711D05BB96001EC336 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0DE0A681D05BB96001EC336 /* PBXTargetDependency */,
+			);
+			name = WatchKitDemo;
+			productName = WatchKitDemo;
+			productReference = C0DE0A311D05BB22001EC336 /* WatchKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0DE0A4C1D05BB96001EC336 /* WatchKitDemoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DE0A6E1D05BB96001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemoWatch" */;
+			buildPhases = (
+				C0DE0A4B1D05BB96001EC336 /* Resources */,
+				C0DE0A6D1D05BB96001EC336 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0DE0A5C1D05BB96001EC336 /* PBXTargetDependency */,
+			);
+			name = WatchKitDemoWatch;
+			productName = WatchKitDemoWatch;
+			productReference = C0DE0A4D1D05BB96001EC336 /* WatchKitDemoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C0DE0A581D05BB96001EC336 /* WatchKitDemoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DE0A6A1D05BB96001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemoWatch Extension" */;
+			buildPhases = (
+				C0DE0A551D05BB96001EC336 /* Sources */,
+				C0DE0A561D05BB96001EC336 /* Frameworks */,
+				C0DE0A571D05BB96001EC336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchKitDemoWatch Extension";
+			productName = "WatchKitDemoWatch Extension";
+			productReference = C0DE0A591D05BB96001EC336 /* WatchKitDemoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0DE0A291D05BB22001EC336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ZhangNan;
+				TargetAttributes = {
+					C0DE0A301D05BB22001EC336 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C0DE0A4C1D05BB96001EC336 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C0DE0A581D05BB96001EC336 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C0DE0A2C1D05BB22001EC336 /* Build configuration list for PBXProject "WatchKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0DE0A281D05BB22001EC336;
+			productRefGroup = C0DE0A321D05BB22001EC336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0DE0A301D05BB22001EC336 /* WatchKitDemo */,
+				C0DE0A4C1D05BB96001EC336 /* WatchKitDemoWatch */,
+				C0DE0A581D05BB96001EC336 /* WatchKitDemoWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0DE0A2F1D05BB22001EC336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0A441D05BB22001EC336 /* LaunchScreen.storyboard in Resources */,
+				C0DE0A411D05BB22001EC336 /* Assets.xcassets in Resources */,
+				C0DE0A3F1D05BB22001EC336 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE0A4B1D05BB96001EC336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0A531D05BB96001EC336 /* Assets.xcassets in Resources */,
+				C0DE0A511D05BB96001EC336 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE0A571D05BB96001EC336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0A651D05BB96001EC336 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0DE0A2D1D05BB22001EC336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0A3C1D05BB22001EC336 /* ViewController.m in Sources */,
+				C0DE0A391D05BB22001EC336 /* AppDelegate.m in Sources */,
+				C0DE0A361D05BB22001EC336 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE0A551D05BB96001EC336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0A631D05BB96001EC336 /* ExtensionDelegate.m in Sources */,
+				C0DE0A771D070BB3001EC336 /* DayWeather.m in Sources */,
+				C0DE0A741D05BBD9001EC336 /* WeatherInterfaceController.m in Sources */,
+				C0DE0A7D1D07144A001EC336 /* DayRowController.m in Sources */,
+				C0DE0A601D05BB96001EC336 /* InterfaceController.m in Sources */,
+				C0DE0A7A1D070BBF001EC336 /* Weather.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0DE0A5C1D05BB96001EC336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DE0A581D05BB96001EC336 /* WatchKitDemoWatch Extension */;
+			targetProxy = C0DE0A5B1D05BB96001EC336 /* PBXContainerItemProxy */;
+		};
+		C0DE0A681D05BB96001EC336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DE0A4C1D05BB96001EC336 /* WatchKitDemoWatch */;
+			targetProxy = C0DE0A671D05BB96001EC336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0DE0A3D1D05BB22001EC336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DE0A3E1D05BB22001EC336 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0DE0A421D05BB22001EC336 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DE0A431D05BB22001EC336 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0DE0A4F1D05BB96001EC336 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DE0A501D05BB96001EC336 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0DE0A461D05BB22001EC336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0DE0A471D05BB22001EC336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0DE0A491D05BB22001EC336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0DE0A4A1D05BB22001EC336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0DE0A6B1D05BB96001EC336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKitDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C0DE0A6C1D05BB96001EC336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKitDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C0DE0A6F1D05BB96001EC336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchKitDemoWatch_Extension;
+				INFOPLIST_FILE = WatchKitDemoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C0DE0A701D05BB96001EC336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchKitDemoWatch_Extension;
+				INFOPLIST_FILE = WatchKitDemoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.zn.WatchKitDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0DE0A2C1D05BB22001EC336 /* Build configuration list for PBXProject "WatchKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DE0A461D05BB22001EC336 /* Debug */,
+				C0DE0A471D05BB22001EC336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DE0A481D05BB22001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DE0A491D05BB22001EC336 /* Debug */,
+				C0DE0A4A1D05BB22001EC336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0DE0A6A1D05BB96001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DE0A6B1D05BB96001EC336 /* Debug */,
+				C0DE0A6C1D05BB96001EC336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0DE0A6E1D05BB96001EC336 /* Build configuration list for PBXNativeTarget "WatchKitDemoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DE0A6F1D05BB96001EC336 /* Debug */,
+				C0DE0A701D05BB96001EC336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0DE0A291D05BB22001EC336 /* Project object */;
+}
